@@ -1,0 +1,13 @@
+[Unit]
+Description=Fake AI chatbot (psychology homework)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/xy770/Documents/Homework/fake_ai
+ExecStart=/home/xy770/Documents/Homework/fake_ai/fake_ai -addr 127.0.0.1:8787
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
